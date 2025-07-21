@@ -1,0 +1,64 @@
+html{
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.MainWrapper{
+    display: flex;
+    flex-direction: column;
+}
+.flexitem{
+    color: white;
+    display: flex;
+    align-items: center;
+    min-height: 6.25rem;
+    padding: 1rem;
+}
+.header{
+    background-color: green;
+    order: 1;
+}
+.aside1{
+    background-color: red;
+    order: 3;
+}
+.aside2{
+    background-color: pink;
+    order: 4;
+}
+.footer{
+    background-color: blue;
+    order: 5;
+}
+.main{
+    background-color: brown;
+    order: 2;
+}
+
+
+
+@media (min-width: 30rem){
+    .MainWrapper{
+        flex-flow: row wrap;
+    }
+    .header{
+        width: 100%;
+    }
+    .main{
+        flex: 1;
+        order: 3;
+    }
+    .aside1{
+        width: 150px;
+        order: 2;
+    }
+    .aside2{
+        width: 150px;
+        order: 4;
+    }
+    .footer{
+        width: 100%;
+    }
+}
