@@ -39,7 +39,7 @@ body{
 
 
 
-@media (min-width: 30rem){
+@media (min-width: 40rem){
     .MainWrapper{
         flex-flow: row wrap;
     }
